@@ -1,0 +1,139 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 1em;
+}
+
+h2,
+h3,
+li {
+  font-family: "Aleo", serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-top: 0;
+  color: #5a5a5a;
+}
+
+ul {
+  padding: 0.3em 1em;
+  margin: 0;
+}
+
+li {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+img {
+  width: 100%;
+}
+
+.meta-info {
+  font-size: 13px;
+}
+
+.divider {
+  color: #dbdbdb;
+}
+
+.time {
+  color: #5a5a5a;
+}
+
+.category {
+  color: #222;
+}
+
+.live {
+  color: #bb1919;
+  font-weight: 700;
+  margin-right: 0.25em;
+}
+
+.icon {
+  height: 13px;
+  width: 13px;
+  display: inline-block;
+  margin-bottom: -2px;
+  filter: invert(32%) sepia(8%) saturate(0%) hue-rotate(174deg) brightness(93%)
+    contrast(74%);
+}
+
+/* 
+Need help? Visit this page: https://scrimba.com/links/bbc-news-solo-project-hints 
+
+WRITE YOUR CODE BELOW 👇
+*/
+.grid {
+  /* margin: 10px; */
+  padding: 15px;
+  display: grid;
+  gap: 15px;
+  border: 3px solid black;
+  /* grid-auto-flow: row; */
+  /* grid-auto-rows: 75px; */
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+
+  grid-template-rows: 300px 20px 300px;
+}
+.featured-article {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-column: 1/4; */
+  grid-column-start: 1;
+  grid-column-end: 4;
+  /* justify-content: end; */
+  /* grid-row: span 1; */
+}
+
+.featured-article-text {
+  display: grid;
+
+  /* grid-column:   1/1; */
+  grid-column-start: 1;
+  grid-column-end: 1;
+  /* display: flex; */
+
+  /* grid-row: 1; */
+}
+.featured-article-img {
+  /* display: flex; */
+  display: grid;
+
+  /* grid-column:  2/4; */
+  grid-column-start: 2;
+  grid-column-end: 4;
+  /* grid-row: 1; */
+}
+.second-row {
+  grid-column: 1/-1;
+}
+/* .regular-article {
+  grid-column: span 1;
+} */
